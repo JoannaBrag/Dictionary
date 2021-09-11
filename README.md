@@ -1,2 +1,2 @@
 # Dictionary
-New project of small dictionary based on Python code.
+Prosty słownik, w którym można zapisać słowa w pliku, wywołać zapisane słowa oraz usunąć niepotrzebne. 
