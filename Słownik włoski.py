@@ -11,6 +11,7 @@ print("Witaj w prostym słowniku, w którym możesz zapisywać i wywoływać poj
 print(80 * "-")
 
 rzeczowniki = {}
+
 while(True):
     
     print("\n1: Dodaj słowo *")
@@ -21,10 +22,10 @@ while(True):
     choice = (input("\nWybierz: "))
 
     if choice == "1":
-        new = input("\nJakie slowo chcesz dodac?: ")
-        next_word = input("\nJakie jest jego tlumaczenie?: ")
-        rzeczowniki[new] = next_word
-        rzeczowniki[next_word] = new
+        new = input("\Jakie słowo w języku polskim chcesz dodać?: ")
+        it_word = input("\nJakie jest jego tłumaczenie na język włoski?: ")
+        rzeczowniki[new] = it_word
+#         rzeczowniki[next_word] = new
         with open('slownik.txt', 'a', encoding='utf-8') as plik:
             plik.write(json.dumps(rzeczowniki))
         plik.close()
